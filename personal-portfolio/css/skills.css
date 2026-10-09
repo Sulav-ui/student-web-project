@@ -1,0 +1,62 @@
+h1,
+h3 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-top: 6px;
+}
+
+ul {
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+ul li {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+ul li a:hover {
+  color: #007bff;
+}
+
+ol {
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+ol li {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
