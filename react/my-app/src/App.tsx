@@ -1,9 +1,20 @@
-import "./App.css";
+// import "./App.css";
 import UserCard from "./UserCard";
 import Experience from "./Experience";
 import Header from "./components/Header";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import EffectCompontent from "./EffectCompontent";
+import TrialContext from "./TrialContext";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ContactUS from "./pages/contactus";
+import AboutUs from "./pages/aboutus";
+import ReactMomo from "./components/reactMomo";
+import LazyLoad from "./components/lazyLoading";
+import { lazy, Suspense } from "react";
+
+// const aboutUs = lazy(() => import("./pages/aboutus"));
+// const contactUs = lazy(() => import("./pages/contactus"));
 
 function App() {
   // const users = [
@@ -24,22 +35,26 @@ function App() {
   //   },
   // ];
   return (
-    <div className="App">
-      {/* <div className="user-cards">
+    // <div className="App">
+    /* <div className="user-cards">
         {users.map((user, index) => (
           <UserCard key={index} user={user} />
         ))}
         <Experience />
-      </div> */}
-      <div className="app-container">
-        <Header />
-        <main>
-          <About />
-          <Experience />
-          <Contact />
-        </main>
-      </div>
-    </div>
+      </div> */
+
+    // <EffectCompontent />
+    // <TrialContext />
+    <BrowserRouter>
+      {/* <Suspense fallback={<p> Please be calm page is loading......</p>}> */}
+      <Routes>
+        <Route path="/contactus" element={<ContactUS />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/reactmemo" element={<ReactMomo />} />
+        <Route path="/lazyloading" element={<LazyLoad />} />
+      </Routes>
+      {/* </Suspense> */}
+    </BrowserRouter>
   );
 }
 
