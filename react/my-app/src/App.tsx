@@ -11,6 +11,8 @@ import ContactUS from "./pages/contactus";
 import AboutUs from "./pages/aboutus";
 import ReactMomo from "./components/reactMomo";
 import LazyLoad from "./components/lazyLoading";
+import Memo from "./components/UseMemo";
+import Debounce from "./components/Debouncing";
 import { lazy, Suspense } from "react";
 
 // const aboutUs = lazy(() => import("./pages/aboutus"));
@@ -52,6 +54,8 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/reactmemo" element={<ReactMomo />} />
         <Route path="/lazyloading" element={<LazyLoad />} />
+        <Route path="/usememo" element={<Memo />} />
+        <Route path="/debounce" element={<Debounce />} />
       </Routes>
       {/* </Suspense> */}
     </BrowserRouter>
