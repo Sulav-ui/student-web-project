@@ -1,7 +1,10 @@
 import React from "react";
+i
 
 const memo = () => {
-  return <div>memo</div>;
+  return <div>
+    <ReactMemo/>
+  </div>;
 };
 
 export default memo;
