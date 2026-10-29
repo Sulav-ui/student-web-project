@@ -14,6 +14,8 @@ import LazyLoad from "./components/lazyLoading";
 import Memo from "./components/UseMemo";
 import Debounce from "./components/Debouncing";
 import { lazy, Suspense } from "react";
+import Counter from "./pages/reduxPage";
+import Product from "./components/ProductPage";
 
 // const aboutUs = lazy(() => import("./pages/aboutus"));
 // const contactUs = lazy(() => import("./pages/contactus"));
@@ -56,6 +58,8 @@ function App() {
         <Route path="/lazyloading" element={<LazyLoad />} />
         <Route path="/usememo" element={<Memo />} />
         <Route path="/debounce" element={<Debounce />} />
+        <Route path="/reduxComponent" element={<Counter />} />
+        <Route path="/products" element={<Product />} />
       </Routes>
       {/* </Suspense> */}
     </BrowserRouter>
