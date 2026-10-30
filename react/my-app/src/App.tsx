@@ -16,6 +16,8 @@ import Debounce from "./components/Debouncing";
 import { lazy, Suspense } from "react";
 import Counter from "./pages/reduxPage";
 import Product from "./components/ProductPage";
+import AsyncThunk from "./AsynThunkComponent/AsyncThunkXomponent";
+import CommonPage from "./CssClashing/CommonPage";
 
 // const aboutUs = lazy(() => import("./pages/aboutus"));
 // const contactUs = lazy(() => import("./pages/contactus"));
@@ -60,6 +62,8 @@ function App() {
         <Route path="/debounce" element={<Debounce />} />
         <Route path="/reduxComponent" element={<Counter />} />
         <Route path="/products" element={<Product />} />
+        <Route path="/asyncthunk" element={<AsyncThunk />} />
+        <Route path="/commonpage" element={<CommonPage />} />
       </Routes>
       {/* </Suspense> */}
     </BrowserRouter>

@@ -3,7 +3,8 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 import { Provider } from "react-redux";
-import store from "./components/redux/store/firstStore.js";
+// import store from "./components/redux/store/firstStore.js";
+import { store } from "./Async Thunk/store.js";
 
 createRoot(document.getElementById("root")!).render(
   // <StrictMode>
