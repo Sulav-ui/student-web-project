@@ -37,7 +37,7 @@ const student1: Student = {
   name: "Charlie",
 };
 
-//Union Types
+// Union Types
 let unionVar: string | number;
 unionVar = "Hello";
 unionVar = 42;
